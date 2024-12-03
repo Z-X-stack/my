@@ -1,0 +1,273 @@
+
+*** Running vivado
+    with args -log bpsk_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bpsk_top.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sun Dec  1 22:34:03 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bpsk_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 612.684 ; gain = 197.676
+Command: read_checkpoint -auto_incremental -incremental F:/AI/project/project.srcs/utils_1/imports/synth_1/bpsk_tb.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from F:/AI/project/project.srcs/utils_1/imports/synth_1/bpsk_tb.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top bpsk_top -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Device 21-9227] Part: xc7z020clg400-2 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18536
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1533.598 ; gain = 449.422
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bpsk_top' [F:/AI/project/project.srcs/sources_1/new/bpsk_top.v:26]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [F:/AI/project/project.runs/synth_1/.Xil/Vivado-21416-DESKTOP-BMP2RL6/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [F:/AI/project/project.runs/synth_1/.Xil/Vivado-21416-DESKTOP-BMP2RL6/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fir_compiler_0' [F:/AI/project/project.runs/synth_1/.Xil/Vivado-21416-DESKTOP-BMP2RL6/realtime/fir_compiler_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fir_compiler_0' (0#1) [F:/AI/project/project.runs/synth_1/.Xil/Vivado-21416-DESKTOP-BMP2RL6/realtime/fir_compiler_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dds_compiler_0' [F:/AI/project/project.runs/synth_1/.Xil/Vivado-21416-DESKTOP-BMP2RL6/realtime/dds_compiler_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dds_compiler_0' (0#1) [F:/AI/project/project.runs/synth_1/.Xil/Vivado-21416-DESKTOP-BMP2RL6/realtime/dds_compiler_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mult_gen_0' [F:/AI/project/project.runs/synth_1/.Xil/Vivado-21416-DESKTOP-BMP2RL6/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_gen_0' (0#1) [F:/AI/project/project.runs/synth_1/.Xil/Vivado-21416-DESKTOP-BMP2RL6/realtime/mult_gen_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/AI/project/project.srcs/sources_1/new/bpsk_top.v:96]
+INFO: [Synth 8-6157] synthesizing module 'ila' [F:/AI/project/project.runs/synth_1/.Xil/Vivado-21416-DESKTOP-BMP2RL6/realtime/ila_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila' (0#1) [F:/AI/project/project.runs/synth_1/.Xil/Vivado-21416-DESKTOP-BMP2RL6/realtime/ila_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vio_1' [F:/AI/project/project.runs/synth_1/.Xil/Vivado-21416-DESKTOP-BMP2RL6/realtime/vio_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vio_1' (0#1) [F:/AI/project/project.runs/synth_1/.Xil/Vivado-21416-DESKTOP-BMP2RL6/realtime/vio_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bpsk_top' (0#1) [F:/AI/project/project.srcs/sources_1/new/bpsk_top.v:26]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_1_lyb'. This will prevent further optimization [F:/AI/project/project.srcs/sources_1/new/bpsk_top.v:105]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'blk_mem_gen_0_lyb'. This will prevent further optimization [F:/AI/project/project.srcs/sources_1/new/bpsk_top.v:49]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'dds_compiler_0_lyb'. This will prevent further optimization [F:/AI/project/project.srcs/sources_1/new/bpsk_top.v:78]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_lyb'. This will prevent further optimization [F:/AI/project/project.srcs/sources_1/new/bpsk_top.v:96]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'fir_compiler_0_lyb'. This will prevent further optimization [F:/AI/project/project.srcs/sources_1/new/bpsk_top.v:66]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mult_gen_0_lyb'. This will prevent further optimization [F:/AI/project/project.srcs/sources_1/new/bpsk_top.v:89]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1646.965 ; gain = 562.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1646.965 ; gain = 562.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1646.965 ; gain = 562.789
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1646.965 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/AI/project/project.gen/sources_1/ip/dds_compiler_0/dds_compiler_0/dds_compiler_0_in_context.xdc] for cell 'dds_compiler_0_lyb'
+Finished Parsing XDC File [f:/AI/project/project.gen/sources_1/ip/dds_compiler_0/dds_compiler_0/dds_compiler_0_in_context.xdc] for cell 'dds_compiler_0_lyb'
+Parsing XDC File [f:/AI/project/project.gen/sources_1/ip/fir_compiler_0/fir_compiler_0/fir_compiler_0_in_context.xdc] for cell 'fir_compiler_0_lyb'
+Finished Parsing XDC File [f:/AI/project/project.gen/sources_1/ip/fir_compiler_0/fir_compiler_0/fir_compiler_0_in_context.xdc] for cell 'fir_compiler_0_lyb'
+Parsing XDC File [f:/AI/project/project.gen/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'mult_gen_0_lyb'
+Finished Parsing XDC File [f:/AI/project/project.gen/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'mult_gen_0_lyb'
+Parsing XDC File [f:/AI/project/project.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'blk_mem_gen_0_lyb'
+Finished Parsing XDC File [f:/AI/project/project.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'blk_mem_gen_0_lyb'
+Parsing XDC File [f:/AI/project/project.gen/sources_1/ip/ila_1/ila/ila_in_context.xdc] for cell 'ila_lyb'
+Finished Parsing XDC File [f:/AI/project/project.gen/sources_1/ip/ila_1/ila/ila_in_context.xdc] for cell 'ila_lyb'
+Parsing XDC File [f:/AI/project/project.gen/sources_1/ip/vio_1/vio_1/vio_1_in_context.xdc] for cell 'vio_1_lyb'
+Finished Parsing XDC File [f:/AI/project/project.gen/sources_1/ip/vio_1/vio_1/vio_1_in_context.xdc] for cell 'vio_1_lyb'
+Parsing XDC File [F:/AI/project/project.srcs/constrs_1/new/bpsk1.xdc]
+Finished Parsing XDC File [F:/AI/project/project.srcs/constrs_1/new/bpsk1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/AI/project/project.srcs/constrs_1/new/bpsk1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bpsk_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bpsk_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [F:/AI/project/project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/AI/project/project.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1706.215 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1706.215 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1706.215 ; gain = 622.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1706.215 ; gain = 622.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for dds_compiler_0_lyb. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fir_compiler_0_lyb. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mult_gen_0_lyb. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for blk_mem_gen_0_lyb. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ila_lyb. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vio_1_lyb. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1706.215 ; gain = 622.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1706.215 ; gain = 622.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1706.215 ; gain = 622.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1706.215 ; gain = 622.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1706.215 ; gain = 622.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1706.215 ; gain = 622.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1706.215 ; gain = 622.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1706.215 ; gain = 622.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1706.215 ; gain = 622.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1706.215 ; gain = 622.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1706.215 ; gain = 622.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1706.215 ; gain = 622.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |blk_mem_gen_0  |         1|
+|2     |fir_compiler_0 |         1|
+|3     |dds_compiler_0 |         1|
+|4     |mult_gen_0     |         1|
+|5     |ila            |         1|
+|6     |vio_1          |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |blk_mem_gen  |     1|
+|2     |dds_compiler |     1|
+|3     |fir_compiler |     1|
+|4     |ila          |     1|
+|5     |mult_gen     |     1|
+|6     |vio          |     1|
+|7     |BUFG         |     1|
+|8     |CARRY4       |     4|
+|9     |LUT1         |     3|
+|10    |LUT5         |     1|
+|11    |FDRE         |    15|
+|12    |IBUF         |     2|
+|13    |OBUF         |    40|
++------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1706.215 ; gain = 622.039
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 1706.215 ; gain = 562.789
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1706.215 ; gain = 622.039
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1706.215 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1706.215 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: d3d4ac44
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:08 . Memory (MB): peak = 1706.215 ; gain = 1060.188
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1706.215 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/AI/project/project.runs/synth_1/bpsk_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bpsk_top_utilization_synth.rpt -pb bpsk_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  1 22:35:38 2024...

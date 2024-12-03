@@ -1,0 +1,12 @@
+
+{ 
+    crc :  4887310661165693443  , 
+    ccp_crc :  0  , 
+    cmdline : " --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_13 -L xbip_pipe_v3_0_9 -L xbip_bram18k_v3_0_9 -L mult_gen_v12_0_21 -L axi_utils_v2_0_9 -L xbip_dsp48_wrapper_v3_0_6 -L xbip_dsp48_addsub_v3_0_9 -L xbip_dsp48_multadd_v3_0_9 -L dds_compiler_v6_0_25 -L fir_compiler_v7_2_22 -L blk_mem_gen_v8_4_8 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot bpsk_top_behav xil_defaultlib.bpsk_top xil_defaultlib.glbl" , 
+    buildDate : "May 22 2024" , 
+    buildTime : "19:03:11" , 
+    linkCmd : "F:\\Xilinx\\Vivado\\2024.1\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/bpsk_top_behav/xsimk.exe\"   \"xsim.dir/bpsk_top_behav/obj/xsim_0.win64.obj\" \"xsim.dir/bpsk_top_behav/obj/xsim_1.win64.obj\" \"xsim.dir/bpsk_top_behav/obj/xsim_2.win64.obj\" \"xsim.dir/bpsk_top_behav/obj/xsim_3.win64.obj\" \"xsim.dir/bpsk_top_behav/obj/xsim_4.win64.obj\" -L\"F:\\Xilinx\\Vivado\\2024.1\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

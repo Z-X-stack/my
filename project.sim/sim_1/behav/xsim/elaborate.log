@@ -1,0 +1,121 @@
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: F:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_13 -L xbip_pipe_v3_0_9 -L xbip_bram18k_v3_0_9 -L mult_gen_v12_0_21 -L axi_utils_v2_0_9 -L xbip_dsp48_wrapper_v3_0_6 -L xbip_dsp48_addsub_v3_0_9 -L xbip_dsp48_multadd_v3_0_9 -L dds_compiler_v6_0_25 -L fir_compiler_v7_2_22 -L blk_mem_gen_v8_4_8 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot bpsk_top_behav xil_defaultlib.bpsk_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_13.xbip_utils_v3_0_13_pkg
+Compiling package fir_compiler_v7_2_22.fir_compiler_v7_2_22_viv_comp
+Compiling package ieee.std_logic_textio
+Compiling package fir_compiler_v7_2_22.globals_pkg
+Compiling package fir_compiler_v7_2_22.components
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_9.global_util_pkg
+Compiling package axi_utils_v2_0_9.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package xbip_utils_v3_0_13.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_25.dds_compiler_v6_0_25_viv_comp
+Compiling package dds_compiler_v6_0_25.pkg_dds_compiler_v6_0_25
+Compiling package dds_compiler_v6_0_25.dds_compiler_v6_0_25_hdl_comps
+Compiling package xbip_pipe_v3_0_9.xbip_pipe_v3_0_9_viv_comp
+Compiling package axi_utils_v2_0_9.axi_utils_v2_0_9_pkg
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_25.pkg_betas
+Compiling package dds_compiler_v6_0_25.pkg_alphas
+Compiling package mult_gen_v12_0_21.mult_gen_v12_0_21_viv_comp
+Compiling package mult_gen_v12_0_21.mult_gen_v12_0_21_pkg
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8_output_stage(...
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8_output_stage(...
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling architecture xilinx of entity axi_utils_v2_0_9.glb_srl_fifo [\glb_srl_fifo(width=2,has_ifx=tr...]
+Compiling architecture xilinx of entity axi_utils_v2_0_9.glb_ifx_slave [\glb_ifx_slave(width=2,has_ifx=t...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.delay [\delay(c_delay_len=1,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.delay [\delay(c_delay_len=1,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.cntrl_delay [\cntrl_delay(c_delay_len=0,c_mem...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.filt_mem [\filt_mem(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.filt_mem [\filt_mem(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.buff [\buff(c_xdevicefamily="zynq",c_d...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.delay [\delay(c_delay_len=3,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.buff [\buff(c_xdevicefamily="zynq",c_d...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.buff [\buff(c_xdevicefamily="zynq",c_d...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(mask="11111111111111111...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.calc [\calc(c_xdevicefamily="zynq",c_p...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.addsub_mult_add [\addsub_mult_add(c_xdevicefamily...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.addsub_mult_add [\addsub_mult_add(c_xdevicefamily...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(inmodereg=0,mask="11111...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.calc [\calc(c_xdevicefamily="zynq",c_p...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.add_accum [\add_accum(c_xdevicefamily="zynq...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.delay [\delay(c_delay_len=7,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.delay [\delay(c_delay_len=8,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.delay [\delay(c_delay_len=3,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.delay [\delay(c_delay_len=1,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.delay [\delay(c_delay_len=2,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.delay [\delay(c_delay_len=2,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.delay [\delay(c_delay_len=1,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.delay [\delay(c_delay_len=2,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.dpr_mem [\dpr_mem(c_xdevicefamily="zynq",...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.delay [\delay(c_delay_len=1,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.polyphase_interpolation [\polyphase_interpolation(c_xdevi...]
+Compiling architecture synth of entity fir_compiler_v7_2_22.fir_compiler_v7_2_22_viv [\fir_compiler_v7_2_22_viv(c_xdev...]
+Compiling architecture xilinx of entity fir_compiler_v7_2_22.fir_compiler_v7_2_22 [\fir_compiler_v7_2_22(c_xdevicef...]
+Compiling architecture fir_compiler_0_arch of entity xil_defaultlib.fir_compiler_0 [fir_compiler_0_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_9.xbip_pipe_v3_0_9_viv [\xbip_pipe_v3_0_9_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_9.xbip_pipe_v3_0_9_viv [\xbip_pipe_v3_0_9_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_9.xbip_pipe_v3_0_9_viv [\xbip_pipe_v3_0_9_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_25.dds_compiler_v6_0_25_rdy [\dds_compiler_v6_0_25_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_9.xbip_pipe_v3_0_9_viv [\xbip_pipe_v3_0_9_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_9.xbip_pipe_v3_0_9_viv [\xbip_pipe_v3_0_9_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_9.xbip_pipe_v3_0_9_viv [\xbip_pipe_v3_0_9_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_9.xbip_pipe_v3_0_9_viv [\xbip_pipe_v3_0_9_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_25.pipe_add [\pipe_add(c_width=16,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_25.accum [\accum(c_xdevicefamily="zynq",c_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_9.xbip_pipe_v3_0_9_viv [\xbip_pipe_v3_0_9_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_9.xbip_pipe_v3_0_9_viv [\xbip_pipe_v3_0_9_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_25.sin_cos [\sin_cos(c_xdevicefamily="zynq",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_9.xbip_pipe_v3_0_9_viv [\xbip_pipe_v3_0_9_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_25.dds_compiler_v6_0_25_core [\dds_compiler_v6_0_25_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_25.dds_compiler_v6_0_25_viv [\dds_compiler_v6_0_25_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_25.dds_compiler_v6_0_25 [\dds_compiler_v6_0_25(c_xdevicef...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture mult_and_v of entity unisim.MULT_AND [mult_and_default]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_21.op_resize [\op_resize(ai_width=8,bi_width=2...]
+Compiling architecture xilinx of entity mult_gen_v12_0_21.luts [\luts(c_xdevicefamily="zynq",c_a...]
+Compiling architecture xilinx of entity mult_gen_v12_0_21.mult_gen_v12_0_21_viv [\mult_gen_v12_0_21_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_21.mult_gen_v12_0_21 [\mult_gen_v12_0_21(c_xdevicefami...]
+Compiling architecture mult_gen_0_arch of entity xil_defaultlib.mult_gen_0 [mult_gen_0_default]
+Compiling module xil_defaultlib.ila
+Compiling module xil_defaultlib.vio_1
+Compiling module xil_defaultlib.bpsk_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot bpsk_top_behav

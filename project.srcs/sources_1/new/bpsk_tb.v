@@ -22,7 +22,7 @@
 
 `timescale 1ns / 1ps
 
-//激励文件
+//modefied
 module bpsk_tb(
 
     );
